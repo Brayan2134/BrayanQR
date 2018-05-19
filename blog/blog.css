@@ -1,0 +1,18 @@
+/*Desktop*/
+body {
+    padding-top: 56px;
+    background-color: white;
+}
+
+img{
+    height: 128px;
+    width: 128px;
+}
+
+/*Mobile*/
+@media (min-width: 992px) {
+    body {
+        padding-top: 56px;
+        background-color: whitesmoke;
+    }
+}
