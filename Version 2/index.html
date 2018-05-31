@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <html lang="en">
+
+    <!--Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--CDN CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!--CDN JS-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!--Basic Styles CSS-->
+    <style>
+        .wrapper{
+            height: 100vh;
+            overflow-x: hidden;
+            overflow-y: auto;
+            perspective: 2px;
+        }
+
+        .section{
+            position: relative;
+            height: 100vh;
+
+            /*Text Format*/
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 0 0 1px #000;
+        }
+
+        .parallax::after{
+            content: " ";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+
+            /*Transformations*/
+            transform: translateZ(-1px) scale(1.5);
+            background-size: 100%;
+            z-index: -1;
+        }
+
+        /*Static DIV Styles*/
+        .static{
+            background: whitesmoke;
+        }
+
+        /*Sets Actual BG*/
+        .bg1::after{
+            background-image: url("img/profile.jpg");
+        }
+
+        .bg2::after{
+            background-color: teal;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Personal Website</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+
+                <!--Home Button-->
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+
+                <!--Portfolio Button-->
+                <li class="nav-item">
+                    <a class="nav-link" href="content/portfolio.html">Portfolio</a>
+                </li>
+
+                <!--Contact Button-->
+                <li class="nav-item">
+                    <a class="nav-link" href="content/contact.html">Contact</a>
+                </li>
+
+                <!--In Development-->
+                <!--Blog-->
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="works/blog.html">Blog</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!--CSS Parallax-->
+    <main class="wrapper">
+        <section class="section parallax bg1">
+            <h1 class="text-center">Brayan Quevedo</h1><br>
+        </section>
+        <section class="section static">
+        </section>
+        <section class="section parallax bg2">
+        </section>
+    </main>
+</body>
+</html>
