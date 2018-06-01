@@ -21,51 +21,48 @@
 
     <!--Basic Styles CSS-->
     <style>
-        .wrapper{
-            height: 100vh;
-            overflow-x: hidden;
-            overflow-y: auto;
-            perspective: 2px;
-        }
+            body, html {
+                height: 100%;
+            }
+            
+            .parallax {
+                /*IMG*/
+                background-image: url('img/profile.jpg');
+            
+                /*Scroll*/
+                height: 100%; 
+            
+                /*Parallax*/
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
 
-        .section{
-            position: relative;
-            height: 100vh;
+            #bg2{
+                /*IMG*/
+                background-image: url('img/example-developer.jpg');
+            
+                /*Scroll*/
+                height: 100%;
 
-            /*Text Format*/
-        }
+                /*Parallax*/
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
 
-        .parallax::after{
-            content: " ";
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-
-            /*Transformations*/
-            transform: translateZ(-1px) scale(1.5);
-            background-size: 100%;
-            z-index: -1;
-        }
-
-        /*Static DIV Styles*/
-        .static{
-            background: whitesmoke;
-        }
-
-        /*Sets Actual BG*/
-        .bg1::after{
-            background-image: url("img/profile.jpg");
-        }
-
-        .bg2{
-            background-color:#FE828C;
-        }
-
-        .bg3{
-            background-color: #191970;
-        }
+            #bg3{
+                background-color: #f5f5dc;
+            }
+            
+            /*Parallax Mobile - May Increase PX*/
+            @media only screen and (max-device-width: 1366px) {
+                .parallax {
+                    background-attachment: scroll;
+                }
+            }
     </style>
 
 </head>
@@ -87,12 +84,12 @@
 
                 <!--Portfolio Button-->
                 <li class="nav-item">
-                    <a class="nav-link" href="content/portfolio.html">Portfolio</a>
+                    <a class="nav-link" href="content/portfolio/portfolio.html">Portfolio</a>
                 </li>
 
                 <!--Contact Button-->
                 <li class="nav-item">
-                    <a class="nav-link" href="content/contact.html">Contact</a>
+                    <a class="nav-link" href="content/contact/contact.html">Contact</a>
                 </li>
 
                 <!--In Development-->
@@ -103,123 +100,97 @@
             </ul>
         </div>
     </nav>
-    
-    <!--CSS Parallax-->
-    <main class="wrapper">
-        <section class="section parallax bg1">
-            <h1 class="text-center display-1">Brayan Quevedo</h1><br>
-        </section>
+        
+    <!--Parallax Effect-->
+    <div class="parallax"></div>
 
+    <!--Container Box 1-->
+    <div class="container-fluid">
+        <div class="row">
 
-        <!--Second Box-->
-        <section class="section static">
-            <div class="container-fluid">
-
-                <!--Top Side-->
-                <div class="row">
-                    <div class="col-sm-12">
-                        <h2 class="text-center display-2 mb-3">My Story</h2>
-                    </div>
-                </div>
-                <div class="row">
-
-                    <!--Left Side-->
-                    <div class="col-sm-6">
-                        <span class="float-sm-left">
-                        <img src="img/w1-pic.jpg" class="col-sm-12">
-                        </span>
-                    </div>
-
-                    <!--Right Side-->
-                    <div class="col-sm-6">
-                        <span>
-                            <h1 class="text-center">About Me</h1>
-                            <p class="lead text-center">
-                                Hello there! My name is Brayan Quevedo!
-                                I'm a high school student attending Sprague High School.
-                                I'm currently a freshmen who just loves to code.
-                                I do a lot of simple projects that add no real world value since I just love the process of coding!
-                            </p>
-                            <h2 class="text-center">What I code</h2>
-                            <p class="lead text-center">
-                                If you couldn't already tell, I love to develop for the web!
-                                I aspire to become a full stack web-developer some day,
-                                working for a big company, or making my own company to help me accomplish my goals!
-                            </p>
-                        </span>
-                    </div>
-                </div>
+            <!--Top-->
+            <div class="col-lg-12">
+                <h1 class="text-center display-1">
+                    About Me
+                </h1>
             </div>
-        </section>
 
-        <!--Third Box-->
-        <section class="section static bg2">
-            <div class="container-fluid">
+            <!--Left Side-->
+            <div class="col-lg-6">
+                <h3 class="text-center display-3">
+                    Who I am.
+                </h3>
+                <p class="lead text-justify">
+                    Hello there!
+                    My name's Brayan Quevedo Ramos.
+                    I'm a current high school student who loves front end and back end web development.
+                    As I just said, I ONLY do front end development,
+                    but i'm currently attempting to learn web applications.
+                </p>
+                <h3 class="text-center display-3">
+                    Why I Develop.
+                </h3>
+                <p class="lead text-justify">
+                    So lot's of people here would tell you should hire them, but not me.
+                    Honestly I just develop for the love of it.
+                    I don't intend to make money from developing, but I love webpages,
+                    and they annoy me so much when I can't navigate through them,
+                    so I decided to make modern websites that look professional and be
+                    very easy to navigate!
+                </p>
+            </div>
 
-                <!--Top-->
-                <div class="col-sm-12">
-                    <span>
-                        <h1 class="text-center display-2 mb-3 text-white">Development</h1>
-                    </span>
-                </div>
+            <!--Right Side-->
+            <div class="col-lg-6 float-right">
+                <img src="img/w1-pic.jpg" class="col-lg-12">    
+            </div>
+        </div>
+    </div>
 
-                <!--Left-->
-                <div class="col-sm-6 float-left">
-                    <h2 class="text-center text-white mb-4">Web Development Languages</h2>
-                    <h4 class="text-white">HTML - Know Very Well</h4>
-                    <h4 class="text-white">CSS - Know Very Well</h4>
-                    <h4 class="text-white">PHP - Have A Basic Understanding</h4>
-                    <h4 class="text-white">JS - Don't Know</h4>
-                    <h2 class="text-center text-white mb-4 mt-4">Other Languages</h2>
-                    <h4 class="text-white">SQL - Know Very Well</h4>
-                    <h4 class="text-white">Python - Have A Basic Understanding</h4>
-                </div>
+    <!--Parallax IMG 2-->
+    <div class="parallax" id="bg2"></div>
 
-                <!--Right-->
-                <div class="col-sm-6 float-right">
-                    <img src="img/example-developer.jpg" class="col-sm-12">
-                <p class="text-white">Not me coding, but an example of someone developing (at least I hope) great software!</p>
-                </div><!--End Right Section-->
-            </div><!--End Container-->
-        </section>
+    <!--Container Box 2-->
+    <div class="container-fluid" id="bg3">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="display-1 text-center">
+                    More On Development.
+                </h1>
+            </div>
 
-        <!--3rd Box-->
-        <section class="section static bg3">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1 class="display-2 text-white text-center mb-3">Other</h1>
-                    </div>
+            <!--Left Side IMG-->
+            <div class="col-lg-6">
+                <img src="img/example-html-dev.jpg" class="col-lg-12">
+            </div>
 
-                    <!--Left-->
-                    <div class="col-lg-6">
-                        <h2 class="text-center text-white">Acknowledgments</h2>
-                        <p class="lead text-white">
-                            Here's the part where I reference where I got help from.
-                            Yes, because i'm always learning new techniques to learning development,
-                            I needed some help.
-                            I feel like I was inspired by some of the code I came across.
-                            The right thing to do is give back!
-                        </p>
-                        <p class="lead text-white">
-                            <a href="https://getbootstrap.com/docs/4.0/components/navbar/" style="color: silver;">Where I got the navbar from.</a>
-                        </p>
-                    </div>
+            <!--Right Side Info-->
+            <div class="col-lg-6">
+                <h3 class="display-3 text-center">
+                    Web Development Languages.
+                </h3>
+                <h4 class="text-center mt-5">
+                    HTML - Very Good At Developing (Bootstrap 4 Included) <br>
+                    CSS - Very Good At Developing <br>
+                    JS - Know The Basis <br>
+                    JQuery - Don't Know <br>
+                </h4>
+            </div>
 
-                    <!--Right-->
-                    <div class="col-lg-6">
-                        <h2 class="text-center text-white">Website Problems</h2>
-                        <p class="lead text-white">
-                            Every developer does make mistakes - they're human!
-                            Now on that topic, I made some mistakes developing this website.
-                            While the desktop and tablet version of these website's are great,
-                            the mobile version looks like a mess!
-                            I'm going to fix that in the coming days!
-                        </p>
-                    </div>
-                </div>
-            </div><!--End Container-->
-        </section>
-    </main><!--End CSS Parallax-->
+            <!--Footer Of Container (12col)-->
+            <div class="col-lg-12">
+                <h3 class="display-3 text-center">
+                    Other Development Languages.
+                </h3>
+                <h4 class="text-center mt-5">
+                    Python - Know The Basis <br>
+                    SQL - Very Good At Using <br>
+                    C++ - Know The Basis <br>
+                </h4>
+            </div>
+        </div>
+
+    </div>
+              
 </body>
 </html>
