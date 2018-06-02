@@ -26,11 +26,39 @@
             
         .parallax {
             /*IMG*/
-            background-image: url('img/profile.jpg');
+            background-image: url('#');
             
             /*Scroll*/
             height: 100%; 
             
+            /*Parallax*/
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #bg1{
+            /*IMG*/
+            background-image: url('../../img/example-html-dev.jpg');
+
+            /*Scroll*/
+            height: 100%;
+
+            /*Parallax*/
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #bg2{
+            /*IMG*/
+            background-image: url('../../img/tran1.jpg');
+
+            /*Scroll*/
+            height: 100%;
+
             /*Parallax*/
             background-attachment: fixed;
             background-position: center;
@@ -75,14 +103,101 @@
 
                 <!--Blog-->
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="works/blog.html">Blog</a>
+                    <a class="nav-link disabled" href="works/blog/blog.html">Blog</a>
                 </li>
             </ul>
         </div>
     </nav>
     
-     <!--Parallax Effect-->
-     <div class="parallax"></div>
-     
+    <!--Header Content-->
+    <div class="container-fluid">
+        <div class="col-lg-12">
+            <h1 class="display-1 text-center">
+                Portfolio
+            </h1>
+            <p class="text-secondary text-center">
+                Everything work/experience related shall be kept here.
+            </p>
+            <hr>
+        </div>
+    </div>
+
+    <!--Parallax Effect-->
+    <div class="parallax" id="bg1">
+        <hr>
+    </div>
+
+    <!--First Container-->
+    <div class="container-fluid">
+        <div class="row">
+
+            <!--Top-->
+            <div class="col-lg-12">
+                <h1 class="display-2 text-center">
+                    Work Experience
+                </h1>
+                <p class="text-secondary text-center">
+                    This does mean that if I was at a job site at some point, I have recorded it. <br>
+                    This could be actually working, or job shadows.
+                </p>
+            </div>
+
+            <!--Left Side-->
+            <div class="col-lg-3">
+                <h3 class="text-center">
+                    Job Shadow Experience
+                </h3>
+                <p class="lead">
+                    Garmin Ltd.
+                </p>
+                <!--Garmin Section - Job Shadow-->
+                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#Garmin">
+                    See More
+                </button>
+                <div id="Garmin" class="collapse">
+                    April 27, 2018. I attended a job shadow at the Garmin development facility in Salem, Oregon.
+                    I went from 12-5PM. I learned the basis of what a Software Engineer does,
+                    and followed someone to see what duties/tasks/responsibilities one held.
+                    While i'm not allowed to share exactly what happened due to my signing of an NDA,
+                    I can say i gained crucial skills/advice that I would need as a software developer later,
+                    when I can become one.
+                </div>
+            </div>
+
+            <!--Volunteer-->
+            <div class="col-lg-9">
+                <h3 class="text-center">
+                    Volunteering
+                </h3>
+                <p class="text-secondary text-center">
+                    Total Hours Volunteered - 3
+                </p>
+
+                <!--Volunteer Cards-->
+                <div id="accordion">
+                    <div class="card">
+                        <!--Food Drive Card Header-->
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0 text-center">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Stamp Out Hunger Food Drive!
+                                </button>
+                            </h5>
+                        </div>
+                        <!--Food Drive Card Body-->
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Parallax OnScroll-->
+    <div class="parallax" id="bg2"></div>
+
+    <!--Container 2-->
 </body>
 </html>
