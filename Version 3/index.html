@@ -466,35 +466,35 @@
 
     <!--Form-->
     <div class="col-lg-12" id="form-style-1">
-        <form method="POST" name="email-form" action="form-to-email.php">
-            <ul class="form-style-1">
-                <li><label for='name'>Full Name <span class="required">*</span></label><input type="text" name="name" class="field-divided" placeholder="First, Last" />
-                <li>
-                    <label for='email'>Email <span class="required">*</span></label>
-                    <input type="email" name="email" class="field-long" placeholder="abc@gmail.com" />
-                </li>
-                <li>
-                    <label>Subject</label>
-                    <select name="field4" class="field-select">
-                    <option value="Estimate">Free Estimate</option>
-                    <option value="General Question">General</option>
-                    </select>
-                </li>
-                <li>
-                    <label for='message'>Your Message/Phone Number <span class="required">*</span></label>
-                    <textarea name="message" id="comment" class="field-long field-textarea"></textarea>
-                </li>
-                <li>
-                    <input type="submit" value="Submit" name='submit' />
-                </li>
-            </ul>
-            </form>
-          <script language="JavaScript">
-          var frmvalidator  = new Validator("myemailform");
-          frmvalidator.addValidation("name","req","Please provide your name"); 
-          frmvalidator.addValidation("email","req","Please provide your email"); 
-          frmvalidator.addValidation("email","email","Please enter a valid email address"); 
-          </script>
+      <form method="POST" name="email-form" action="form-to-email.php">
+        <ul class="form-style-1">
+          <li><label for='name'>Full Name <span class="required">*</span></label><input type="text" name="name" class="field-divided" placeholder="First, Last" />
+            <li>
+              <label for='email'>Email <span class="required">*</span></label>
+              <input type="email" name="email" class="field-long" placeholder="abc@gmail.com" />
+            </li>
+            <li>
+              <label>Subject</label>
+              <select name="field4" class="field-select">
+                <option value="Estimate">Free Estimate</option>
+                <option value="General Question">General</option>
+              </select>
+          </li>
+          <li>
+            <label for='message'>Your Message/Phone Number <span class="required">*</span></label>
+            <textarea name="message" id="comment" class="field-long field-textarea"></textarea>
+          </li>
+          <li>
+            <input type="submit" value="Submit" name='submit' />
+          </li>
+        </ul>
+      </form>
+      <script language="JavaScript">
+        var frmvalidator  = new Validator("myemailform");
+        frmvalidator.addValidation("name","req","Please provide your name"); 
+        frmvalidator.addValidation("email","req","Please provide your email"); 
+        frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+    </script>
   </section>
 
   <!--Donate-->
