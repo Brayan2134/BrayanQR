@@ -428,11 +428,19 @@
           <h2 class="text-center">
             Contact.
           </h2>
+          <p class="text-justify">
+            Are you ready to hire me for your next development project?
+            If so, that's great!
+            Are you just needing more information about me or
+            my development? Sure!
+            Use my E-mail below to hire/ask me any question!
+            I'll always be happy to respond!
+          </p>
         </div>
 
         <!--Icons-->
-        <div class="col-lg-12"></
-        <div class="col-lg-8 mx-auto">
+        <div class="col-lg-12">
+        <div class="col-lg-12 mx-auto">
           <ul class="list-inline banner-social-buttons">
             <li class="list-inline-item">
               <a href="https://twitter.com/brayanq44997157" class="btn btn-default btn-lg">
@@ -455,6 +463,38 @@
         </ul>
       </div>
     </div>
+
+    <!--Form-->
+    <div class="col-lg-12" id="form-style-1">
+        <form method="POST" name="email-form" action="form-to-email.php">
+            <ul class="form-style-1">
+                <li><label for='name'>Full Name <span class="required">*</span></label><input type="text" name="name" class="field-divided" placeholder="First, Last" />
+                <li>
+                    <label for='email'>Email <span class="required">*</span></label>
+                    <input type="email" name="email" class="field-long" placeholder="abc@gmail.com" />
+                </li>
+                <li>
+                    <label>Subject</label>
+                    <select name="field4" class="field-select">
+                    <option value="Estimate">Free Estimate</option>
+                    <option value="General Question">General</option>
+                    </select>
+                </li>
+                <li>
+                    <label for='message'>Your Message/Phone Number <span class="required">*</span></label>
+                    <textarea name="message" id="comment" class="field-long field-textarea"></textarea>
+                </li>
+                <li>
+                    <input type="submit" value="Submit" name='submit' />
+                </li>
+            </ul>
+            </form>
+          <script language="JavaScript">
+          var frmvalidator  = new Validator("myemailform");
+          frmvalidator.addValidation("name","req","Please provide your name"); 
+          frmvalidator.addValidation("email","req","Please provide your email"); 
+          frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+          </script>
   </section>
 
   <!--Donate-->
