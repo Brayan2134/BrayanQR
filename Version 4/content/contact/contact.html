@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Brayan Quevedo Ramos - Contact</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!--Custom Fonts-->
+        <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+    
+        <!-- Custom CSS -->
+        <link href="../../css/grayscale.index.css" rel="stylesheet">
+</head>
+<body>
+    
+     <!-- Navigation -->
+     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Brayan Quevedo Ramos.</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fa fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+        
+                        <!--To Portfolio Section-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="../porfolio/portfolio.html">Portfolio</a>
+                        </li>
+        
+                        <!--To Pricing Section-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pricing/price.css">Pricing</a>
+                        </li>
+        
+                        <!--To Contact Section-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="../contact/contact.html">Contact</a>
+                        </li>
+        
+                        <!--To Donate Section-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="../donate/donate.html">Donate</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+            <!--Form-->
+              <!--Contact Section-->
+  <section id="contact">
+        <div class="container">
+          <div class="row">
+              
+            <!--Header-->
+            <div class="col-lg-12">
+              <h1 class="text-center">
+                Contact.
+              </h1>
+              <p class="text-justify">
+                Are you ready to hire me for your next development project?
+                If so, that's great!
+                Are you just needing more information about me or
+                my development? Sure!
+                Use my E-mail below to hire/ask me any question!
+                I'll always be happy to respond!
+              </p>
+            </div>
+    
+            <!--Icons-->
+            <div class="col-lg-12 text-center">
+            <div class="col-lg-12 mx-auto">
+              <ul class="list-inline banner-social-buttons">
+                <li class="list-inline-item">
+                  <a href="https://twitter.com/brayanq44997157" class="btn btn-default btn-lg">
+                  <i class="fa fa-twitter fa-fw"></i>
+                  <span class="network-name">Twitter</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://github.com/Brayan2134" class="btn btn-default btn-lg">
+                  <i class="fa fa-github fa-fw"></i>
+                  <span class="network-name">Github</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://instagram.com/brayan2134/?hl=en" class="btn btn-default btn-lg">
+                <i class="fa fa-instagram fa-fw"></i>
+                <span class="network-name">Instagram</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    <div class="col-lg-12" id="form-style-1">
+            <form method="POST" name="email-form" action="form-to-email.php">
+              <ul class="form-style-1">
+                <li><label for='name'>Full Name <span class="required">*</span></label><input type="text" name="name" class="field-divided" placeholder="First, Last" />
+                  <li>
+                    <label for='email'>Email <span class="required">*</span></label>
+                    <input type="email" name="email" class="field-long" placeholder="abc@gmail.com" />
+                  </li>
+                  <li>
+                    <label>Subject</label>
+                    <select name="field4" class="field-select">
+                      <option value="Estimate">Free Estimate</option>
+                      <option value="General Question">General</option>
+                    </select>
+                </li>
+                <li>
+                  <label for='message'>Your Message/Phone Number <span class="required">*</span></label>
+                  <textarea name="message" id="comment" class="field-long field-textarea"></textarea>
+                </li>
+                <li>
+                  <input type="submit" value="Submit" name='submit' />
+                </li>
+              </ul>
+            </form>
+            <script language="JavaScript">
+              var frmvalidator  = new Validator("myemailform");
+              frmvalidator.addValidation("name","req","Please provide your name"); 
+              frmvalidator.addValidation("email","req","Please provide your email"); 
+              frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+          </script>
+      
+          <!--Line-->
+          <div class="col-lg-12">
+            <hr>
+          </div>
+          </div>
+          </div>
+          </div>
+        </section>
+      
+
+    <!--Bootstrap core JavaScript-->
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      
+    <!--Plugin JavaScript-->
+    <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
+      
+    <!--Custom scripts for this template-->
+    <script src="../../js/grayscale.min.js"></script>
+</body>
+</html>
