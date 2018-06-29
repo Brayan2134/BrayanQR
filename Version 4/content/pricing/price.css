@@ -21,14 +21,14 @@ body{
 
 #price-header{
     font-family: 'Montserrat', sans-serif;
-    font-weight: 200;
+    font-weight: Thin;
     font-size: 24px;
 }
 
 #price{
-    font-size: 55px;
+    font-size: 50px;
     text-align: justify;
-    font-weight: 150;
+    font-weight: 100;
 }
 
 #text-muted{
