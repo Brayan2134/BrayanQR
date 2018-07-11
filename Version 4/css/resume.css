@@ -108,6 +108,7 @@ section.resume-section {
   border-bottom: 1px solid #dee2e6;
   padding-top: 5rem !important;
   padding-bottom: 5rem !important;
+  background: url('assets/img/profile/IMG_6239.CR2.jpg');
 }
 
 section.resume-section .resume-item .resume-date {
@@ -144,10 +145,6 @@ a {
 
 a:hover, a:focus, a:active {
   color: #824027;
-}
-
-#main_head{
-  background-image: url('assets/img/profile/IMG_6239.CR2.jpg');
 }
 
 #askprice{
