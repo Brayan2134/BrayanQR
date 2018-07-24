@@ -26,7 +26,8 @@ a {
 }
 
 a:hover {
-  color: #f05f40;
+  background: rgb(24, 24, 24);
+  color: white;
 }
 
 h1,
@@ -39,7 +40,7 @@ h6 {
 }
 
 .bg-primary {
-  background-color: #F05F40 !important;
+  background-color: #F0F0F0 !important;
 }
 
 .bg-dark {
@@ -92,12 +93,12 @@ img::-moz-selection {
 #mainNav .navbar-brand {
   font-weight: 700;
   text-transform: uppercase;
-  color: #F05F40;
+  color: black;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
 #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color: #f05f40;
+  color: #E8E8E8;
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link,
@@ -105,23 +106,27 @@ img::-moz-selection {
   font-size: .9rem;
   font-weight: 700;
   text-transform: uppercase;
-  color: #212529;
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-  color: #F05F40;
+  color: #E8E8E8;
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link.active,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
-  color: #F05F40 !important;
+  color: #E8E8E8 !important;
   background-color: transparent;
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover {
   background-color: transparent;
+  color: #E8E8E8;
+}
+
+#bqr{
+  color: black;
 }
 
 @media (min-width: 992px) {
@@ -212,6 +217,10 @@ header.masthead p {
   header.masthead h1 {
     font-size: 4rem;
   }
+}
+
+#aboutcontainer{
+  color: black;
 }
 
 .service-box {
@@ -310,4 +319,14 @@ header.masthead p {
 
 .btn-primary:active, .btn-primary:focus {
   box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
+}
+
+#btn-reverse{
+  background: rgb(24, 24, 24);
+  color: white;
+}
+
+#btn-reverse:hover{
+  background: white;
+  color: black;
 }
