@@ -341,8 +341,7 @@ figure {
 
 figcaption {
   width: 100%;
-  text-align: justify;
-  margin-left: 15px;
+  text-align: center;
 }
 
 figure:hover{
@@ -350,4 +349,12 @@ figure:hover{
   transition: .25s ease-in-out;
   -moz-transition: .25s ease-in-out;
   -webkit-transition: .25s ease-in-out;
+}
+
+#footerh4{
+  color: white;
+}
+
+#footer{
+  background: rgb(24, 24, 24);
 }
