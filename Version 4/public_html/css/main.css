@@ -358,3 +358,37 @@ figure:hover{
 #footer{
   background: rgb(24, 24, 24);
 }
+
+#pricesilver{
+  font-weight: 500;
+  font-size: 12vh;
+  text-align: center;
+}
+
+#silver{
+  background: #dadada;
+  border-radius: 1px;
+}
+
+#professional{
+  background: rgb(24, 24, 24);
+}
+
+#silver{
+  color: #808080;
+}
+
+#gold{
+  color: #D4AF37;
+}
+
+#pricegold{
+  color: #D4AF37;
+  font-weight: 500;
+  font-size: 12vh;
+  text-align: center;
+}
+
+#white{
+  color: whitesmoke;
+}
