@@ -393,3 +393,8 @@ figure:hover{
 #white{
   color: whitesmoke;
 }
+
+#workdates{
+  color: #FF2400;
+  font-size: 3vh;
+}
