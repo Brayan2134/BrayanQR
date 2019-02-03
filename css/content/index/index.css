@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+.intro{
+    font-family: 'Raleway', sans-serif;
+}
+
+.gold{
+    color: #d4af37;
+}
+
+.whoiam{
+    margin-bottom: 3vh;
+}
+
+.btn-masthead{
+    padding-left: 20px;
+    padding-right: 20px;
+    background: white;
+    color: rgb(24, 24, 24);
+}
+
+.btn-masthead:hover{
+    transition: all 0.2s;
+    color: white;
+    background: rgb(24, 24, 24);
+}
